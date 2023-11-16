@@ -57,6 +57,7 @@ function TableRecepcionista({ data }) {
               <TableCell>
                 <ActionButton
                   style={{ backgroundColor: "blue", color: "white" }}
+                  onClick={() => (navigate("/responsable/subir"))}
                 >
                   Subir
                 </ActionButton>

@@ -14,7 +14,7 @@ function Login() {
     password: "",
   });
   useEffect(() => {
-    if (localStorage.getItem("LabUser")) {
+    if (localStorage.getItem("User")) {
       navigate("/");
     }
   }, []);
@@ -38,7 +38,7 @@ function Login() {
         toast.error(data.msg, toastOptions);
       }
       if (data.status === true) {
-        localStorage.setItem("LabUser", JSON.stringify(data.user));
+        localStorage.setItem("User", JSON.stringify(data.user),);
         navigate("/");
       }
     }
